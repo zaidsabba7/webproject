@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../zaid/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        outline: 0;
+        font-family: "nunito", sans-serif;
+      }
+      body {
+        background-image: url("WhatsApp Image 2023-11-29 at 21.05.18_c901aaac.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .container {
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px 20px;
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        width: 400px;
+        margin-top: 10%;
+      }
+
+      .container h1 {
+        margin-bottom: 12px;
+        color: black;
+        text-transform: uppercase;
+      }
+      .container label {
+        color: black;
+      }
+      .container input,
+      textarea {
+        padding: 8px 10px;
+        width: calc(100% - 20px);
+        font-size: 16px;
+        margin: 12px 0;
+        resize: none;
+      }
+      .container button {
+        width: 100%;
+        padding: 10px;
+        background-color: #9dd9f3;
+        border: none;
+        border-radius: 30px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: bold;
+        transition: 0.4s;
+      }
+      button:hover {
+        background-color: #00008b;
+      }
+    </style>
+    <title>Car Zone</title>
+  </head>
+  <body>
+    <header>
+      <div class="Main-Nav">
+        <div class="Logo"><span>C</span>ar <span>Z</span>one</div>
+        <div class="Nav-Btns">
+          <ul>
+            <a class="Nav-Btn" href="../index.html"><li>Home</li></a>
+            <a class="Nav-Btn" href="../hamza/About_Us.html"><li>About</li></a>
+            <a class="Nav-Btn" href="../zaid/Services.html"
+              ><li>Services</li></a
+            >
+            <a class="Nav-Btn" href="../hamza/ContactUs.html"
+              ><li>Contact</li></a
+            >
+            <a class="Nav-Btn" href="../qais/Reviews.html"><li>Review</li></a>
+            <a class="Nav-Btn" href="../zaid/sitemap.html"><li>Site Map</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <form>
+        <h1>Contact us</h1>
+        <label style="font-weight: bold">Full Name: </label><br />
+        <input type="text" /><br />
+        <label style="font-weight: bold">Email: </label><br />
+        <input type="email" /><br />
+        <label style="font-weight: bold">Phone Number:</label><br />
+        <input type="number" /><br />
+        <label style="font-weight: bold">Address:</label><br />
+        <select name="My Select">
+          <option value="Amman">Amman</option>
+          <option value="Zarqa">Zarqa</option>
+          <option value="Al Mafraq">Al Mafraq</option>
+          <option value="Al Tafilah">Al Tafilah</option>
+          <option value="Al Karak">Al Karak</option>
+          <option value="Aqaba">Aqaba</option>
+          <option value="Ma’an">Ma’an</option>
+          <option value="Madaba">Madaba</option>
+          <option value="Al Balqa’">Al Balqa’</option>
+          <option value="Jarash">Jarash</option>
+          <option value="Irbid">Irbid</option>
+          <option value="Ajlun">Ajlun</option></select
+        ><br />
+        <label style="font-weight: bold">Message: </label><br />
+        <textarea rows="16"></textarea><br />
+        <button>Write to Us</button>
+      </form>
+    </div>
+  </body>
+</html>

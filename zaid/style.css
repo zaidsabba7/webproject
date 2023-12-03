@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------Home----------*/
+#Home{
+    background-image: url(./assests/back.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+    header{
+        background-color: rgba(37, 37, 37, 0.84);
+        backdrop-filter: blur(20px);
+    }
+
+    .Main-Nav{
+        height: 10vh;
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+        grid-template-areas: "Logo Btns";
+    }
+
+    .Logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        font-size:260% ;   
+    }
+
+    .Logo span{
+
+    color: yellow;
+    }
+
+
+    .Logo::after{
+        content: "";
+        width: 2px;
+        background-color: white;
+        height: 50%;
+    }
+
+    .Nav-Btns ul{
+        height: 10vh;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .Nav-Btn{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        color: yellow;
+        font-size: 130%;
+    }
+
+    .Nav-Btn::after{
+        content: "";
+        height: 2px;
+        background-color: black;
+    }
+
+    .Nav-Btn:hover::after{
+        background-color: white;
+    }
+
+/*----------Main----------*/
+
+.Home-Main{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.Title{
+    margin-top: 2em;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    backdrop-filter: blur(40px);
+    
+}
+.Title span{
+    color: rgb(255, 255, 0);
+}
+
+.CTA{
+background-color: rgb(37, 37, 37);
+border: yellow 2px solid;
+padding:10px 40px;
+border-radius: 40px;
+color: yellow;
+font-size: 1.1em;
+}
+
+.CTA:hover{
+cursor: pointer;
+background-color: rgba(37, 37, 37, 0.681);
+}
+
+
+@media only screen and (max-width: 500px){
+
+.Logo{
+    font-size: 150%;
+}
+
+.Nav-Btn{
+    font-size: 90%;
+}
+
+.Title{
+    font-size: 2.4em;
+}
+
+}
+
+/*----------Services----------*/
+
+#Services{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    background-image: url(./assests/sback2.jpg);
+}
+
+.Services-Main{
+    min-height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Head{
+    margin-top: 5%; ;
+    width: 90%;
+    height: 20vh;
+    padding: 20px;
+    background-image: url(./assests/Headback.jpg);
+    color: wheat;
+    text-align: center;
+    font-size: 130%;
+    border-radius: 10px;
+    box-shadow: 20px 20px 40px  rgb(0, 0, 0);
+}
+
+
+
+.Card1{
+    width: 35%;
+    height: 60vh;
+    background-color: black ;
+    margin-bottom:5% ;
+    border-radius: 10px;
+    box-shadow: 10px 10px 70px 1px black;
+
+}
+
+.L-Title{
+    width: 100%;
+    height: 20%;
+    background-color:rgb(61, 61, 61);
+    backdrop-filter: blurI(40px);
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    font-size: 2em;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+
+.L-Body{
+    width: 100%;
+    height:80%;
+    /* background-color: blue; */
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around ;
+}
+
+.L-img{
+    border: 1px solid white;
+    width: 80%;
+    height: 60%;
+    background-image: url(./assests/Lback.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+.E-img{
+    width: 80%;
+    height: 60%;
+    background-image: url(./assests/Eback.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.L-Btn{
+    padding: 10px 20px; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.7s ease;
+}
+.L-Btn a{
+    text-decoration: none;
+    color: black;
+}
+.L-Btn:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+
+
+
+
+
+
+.body {
+    width: 90%;
+    margin-top: 10%;
+    min-height: 40vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between; 
+}
+.Card {
+    width: 30%;
+    background-color: transparent;
+    height: 60vh;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 70px 1px black;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 500px){
+    .body{
+    flex-direction: column;
+    }
+
+    .Card,.Card1{
+        width: 80%;
+    }
+
+    
+    }
+
+
+
+
+
+
+.Card-Title{
+    width: 100%;
+    height: 20%;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.Card-Body{
+width: 100%;
+height: 80%;
+background-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+border-radius: 0px 0px 10px 10px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid yellow;
+}
+
+.img{
+    
+    width: 80%;
+    height: 70%;
+    
+}
+
+.Card-Body button{
+    padding: 10px 20px; 
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.7s ease;
+}
+.Card-Body button:hover{
+    background-color: yellow;
+    color: black;
+}
